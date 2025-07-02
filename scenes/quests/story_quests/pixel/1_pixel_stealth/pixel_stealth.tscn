@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=4 uid="uid://xd6i1vwmc03g"]
+[gd_scene load_steps=18 format=4 uid="uid://xd6i1vwmc03g"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_fcl0g"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_lkhil"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="3_qwaxc"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="4_ij2yi"]
+[ext_resource type="Texture2D" uid="uid://502iqjy3byoc" path="res://scenes/quests/story_quests/pixel/imagenes/OficiaNormal/1.png" id="4_vyuib"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_3wmo8"]
 [ext_resource type="Resource" uid="uid://cppk2qynt485b" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_checkpoint.dialogue" id="6_2n4hb"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_xhgmx"]
@@ -66,12 +67,8 @@ tile_set = ExtResource("2_lkhil")
 [node name="iconos" type="TileMapLayer" parent="TileMapLayers"]
 tile_set = ExtResource("2_lkhil")
 
-[node name="Computadora" type="TileMapLayer" parent="TileMapLayers"]
-tile_map_data = PackedByteArray("AAAfAAQAGgACAAEAAAAgAAQAGgADAAEAAAAfAAUAGgACAAIAAAAgAAUAGgADAAIAAAAfAAYAGgACAAMAAAAgAAYAGgADAAMAAAA=")
-tile_set = ExtResource("2_lkhil")
-
-[node name="Player" parent="." instance=ExtResource("3_qwaxc")]
-position = Vector2(164, 463)
+[node name="Player" parent="." groups=["filling_barrels"] instance=ExtResource("3_qwaxc")]
+position = Vector2(163, 439)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 process_mode = 3
@@ -81,6 +78,10 @@ limit_left = 0
 limit_top = 0
 position_smoothing_enabled = true
 editor_draw_limits = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(1, -26)
+texture = ExtResource("4_vyuib")
 
 [node name="EnemyGuards" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -98,11 +99,7 @@ curve = SubResource("Curve2D_vnsq3")
 
 [node name="Guard2-RunningInCircles2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("4_ij2yi")]
 visible = false
-<<<<<<< HEAD
-position = Vector2(10041, 3482.92)
-=======
 position = Vector2(9585, 3311.27)
->>>>>>> 499176c68c64fdc2cbe56a753675881d10c99ed6
 patrol_path = NodePath("Guard2-RunningPath")
 wait_time = 0.3
 move_speed = 1000.0
