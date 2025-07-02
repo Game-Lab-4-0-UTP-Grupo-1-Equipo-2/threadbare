@@ -67,6 +67,10 @@ tile_set = ExtResource("2_lkhil")
 [node name="iconos" type="TileMapLayer" parent="TileMapLayers"]
 tile_set = ExtResource("2_lkhil")
 
+[node name="Computadora" type="TileMapLayer" parent="TileMapLayers"]
+tile_map_data = PackedByteArray("AAAfAAQAGgACAAEAAAAgAAQAGgADAAEAAAAfAAUAGgACAAIAAAAgAAUAGgADAAIAAAAfAAYAGgACAAMAAAAgAAYAGgADAAMAAAA=")
+tile_set = ExtResource("2_lkhil")
+
 [node name="Player" parent="." groups=["filling_barrels"] instance=ExtResource("3_qwaxc")]
 position = Vector2(163, 439)
 
