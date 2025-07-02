@@ -161,6 +161,7 @@ editor_draw_limits = true
 y_sort_enabled = true
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
+modulate = Color(0.691357, 0.691357, 0.691357, 1)
 position = Vector2(400, 349)
 sprite_frames = ExtResource("3_kf5yk")
 animation = &"idle"
@@ -182,4 +183,4 @@ next_scene = "uid://xd6i1vwmc03g"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Rock" parent="." instance=ExtResource("6_hv8sg")]
-position = Vector2(515, 422)
+position = Vector2(596, 404)
