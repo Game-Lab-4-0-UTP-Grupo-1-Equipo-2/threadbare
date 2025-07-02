@@ -4,7 +4,6 @@
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_lkhil"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="3_qwaxc"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="4_ij2yi"]
-[ext_resource type="Texture2D" uid="uid://502iqjy3byoc" path="res://scenes/quests/story_quests/pixel/imagenes/OficiaNormal/1.png" id="4_vyuib"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="5_3wmo8"]
 [ext_resource type="Resource" uid="uid://cppk2qynt485b" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_checkpoint.dialogue" id="6_2n4hb"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="7_xhgmx"]
@@ -13,6 +12,7 @@
 [ext_resource type="Resource" uid="uid://dpv4wurvaamhb" path="res://scenes/quests/story_quests/template/1_template_stealth/template_stealth_components/template_collected.dialogue" id="10_ybf2k"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="11_2eito"]
 [ext_resource type="Resource" uid="uid://crns1apwh37tc" path="res://scenes/quests/story_quests/pixel/1_pixel_stealth/pixel_stealth_components/pixel_stealth.dialogue" id="13_pixelstealth"]
+[ext_resource type="AudioStream" uid="uid://drwaswc141v21" path="res://scenes/quests/story_quests/pixel/sonidos/musicaSuspenso.mp3" id="13_vyuib"]
 
 [sub_resource type="Curve2D" id="Curve2D_vnsq3"]
 _data = {
@@ -83,10 +83,6 @@ limit_top = 0
 position_smoothing_enabled = true
 editor_draw_limits = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Player"]
-position = Vector2(1, -26)
-texture = ExtResource("4_vyuib")
-
 [node name="EnemyGuards" type="Node2D" parent="."]
 y_sort_enabled = true
 
@@ -103,7 +99,7 @@ curve = SubResource("Curve2D_vnsq3")
 
 [node name="Guard2-RunningInCircles2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("4_ij2yi")]
 visible = false
-position = Vector2(10041, 3482.92)
+position = Vector2(13689, 4856.15)
 patrol_path = NodePath("Guard2-RunningPath")
 wait_time = 0.3
 move_speed = 1000.0
@@ -189,7 +185,7 @@ position = Vector2(578, 525)
 dialogue = ExtResource("6_2n4hb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints2/Checkpoint"]
-position = Vector2(450, -74)
+position = Vector2(10, -35)
 shape = SubResource("RectangleShape2D_idy4y")
 debug_color = Color(0, 0, 0, 0.42)
 
@@ -198,7 +194,7 @@ debug_color = Color(0, 0, 0, 0.42)
 [node name="HUD" parent="." instance=ExtResource("7_xhgmx")]
 
 [node name="CollectibleItem" parent="." instance=ExtResource("8_kt1qc")]
-position = Vector2(2466, 366)
+position = Vector2(2468, 361)
 next_scene = "uid://thwcu5akkqp5"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("10_ybf2k")
@@ -207,3 +203,8 @@ collected_dialogue = ExtResource("10_ybf2k")
 script = ExtResource("11_2eito")
 dialogue = ExtResource("13_pixelstealth")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_vyuib")
+volume_db = -18.993
+autoplay = true
