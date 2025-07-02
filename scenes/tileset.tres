@@ -727,7 +727,6 @@ texture_region_size = Vector2i(64, 64)
 14:11/0 = 0
 15:11/0 = 0
 
-<<<<<<< Updated upstream
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pyg04"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1gptm"]
@@ -742,17 +741,7 @@ texture_region_size = Vector2i(64, 64)
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
-=======
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1gptm"]
-texture = ExtResource("11_n0usd")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
->>>>>>> Stashed changes
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nwor3"]
 texture = ExtResource("6_em2qm")
@@ -2172,13 +2161,12 @@ sources/17 = SubResource("TileSetAtlasSource_n0usd")
 sources/18 = SubResource("TileSetAtlasSource_pfv7v")
 sources/22 = SubResource("TileSetAtlasSource_4o4qi")
 sources/14 = SubResource("TileSetAtlasSource_1gptm")
-<<<<<<< Updated upstream
+
 sources/19 = SubResource("TileSetAtlasSource_p23k4")
 sources/21 = SubResource("TileSetAtlasSource_2w62b")
 sources/25 = SubResource("TileSetAtlasSource_ihs3d")
 sources/26 = SubResource("TileSetAtlasSource_j1a6i")
-=======
->>>>>>> Stashed changes
+
 pattern_0 = SubResource("TileMapPattern_0wfyh")
 pattern_1 = SubResource("TileMapPattern_sugp2")
 pattern_2 = SubResource("TileMapPattern_jyhfs")
