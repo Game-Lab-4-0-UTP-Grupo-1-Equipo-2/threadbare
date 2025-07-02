@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=4 uid="uid://xd6i1vwmc03g"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_fcl0g"]
-[ext_resource type="TileSet" path="res://scenes/tileset.tres" id="2_lkhil"]
+[ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_lkhil"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="3_qwaxc"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="4_ij2yi"]
 [ext_resource type="Texture2D" uid="uid://502iqjy3byoc" path="res://scenes/quests/story_quests/pixel/imagenes/OficiaNormal/1.png" id="4_vyuib"]
