@@ -1,6 +1,4 @@
-
 [gd_resource type="TileSet" load_steps=76 format=3 uid="uid://07fq3rspk8ia"]
-
 
 [ext_resource type="Texture2D" uid="uid://doc4qg7e3kgs" path="res://assets/third_party/tiny-swords/Terrain/Water/Water.png" id="1_glnwb"]
 [ext_resource type="Texture2D" uid="uid://lg5dl13njsg3" path="res://assets/first_party/tiles/Grass_And_Sand_Tiles.png" id="2_jmclm"]
@@ -742,7 +740,6 @@ texture_region_size = Vector2i(64, 64)
 3:2/0 = 0
 4:2/0 = 0
 
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nwor3"]
 texture = ExtResource("6_em2qm")
 texture_region_size = Vector2i(64, 64)
@@ -1172,7 +1169,6 @@ texture_region_size = Vector2i(64, 64)
 3:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pfv7v"]
-load_path = "res://.godot/imported/Computadora1.png-e289122cf5241468e3a78a3ccca08988.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2w62b"]
 texture = SubResource("CompressedTexture2D_pfv7v")
@@ -1363,7 +1359,6 @@ texture_region_size = Vector2i(64, 64)
 2:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0dxsh"]
-load_path = "res://.godot/imported/oficina.png-f08611dc699cc42d2c3faed035fb1dc3.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihs3d"]
 texture = SubResource("CompressedTexture2D_0dxsh")
@@ -2161,12 +2156,10 @@ sources/17 = SubResource("TileSetAtlasSource_n0usd")
 sources/18 = SubResource("TileSetAtlasSource_pfv7v")
 sources/22 = SubResource("TileSetAtlasSource_4o4qi")
 sources/14 = SubResource("TileSetAtlasSource_1gptm")
-
 sources/19 = SubResource("TileSetAtlasSource_p23k4")
 sources/21 = SubResource("TileSetAtlasSource_2w62b")
 sources/25 = SubResource("TileSetAtlasSource_ihs3d")
 sources/26 = SubResource("TileSetAtlasSource_j1a6i")
-
 pattern_0 = SubResource("TileMapPattern_0wfyh")
 pattern_1 = SubResource("TileMapPattern_sugp2")
 pattern_2 = SubResource("TileMapPattern_jyhfs")

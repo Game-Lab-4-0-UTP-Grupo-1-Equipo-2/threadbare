@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://bfn5njk0tsayq"]
 
-[ext_resource type="TileSet" path="res://scenes/tileset.tres" id="1_7k2j7"]
+[ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_7k2j7"]
 [ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_Replace image.png" id="2_r76fo"]
 [ext_resource type="SpriteFrames" uid="uid://2ao7815uhi0o" path="res://scenes/quests/story_quests/pixel/pixel_player_components/pixel_player.tres" id="3_kf5yk"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_0fy5w"]
