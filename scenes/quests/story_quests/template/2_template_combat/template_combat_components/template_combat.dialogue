@@ -2,10 +2,15 @@
 # SPDX-License-Identifier: MPL-2.0
 
 ~ start
-Something in this scene will throw projectiles at you. The goal is to redirect them toward the targets.
-Explore the Scene Tree to add, change, or remove elements.
+Informante: ¡Oh no… el científico NOX te está esperando en la sala principal!  
+Gabo: No te preocupes… le daré una clase de física… ¡con puños incluidos!
+Objetivo: Desvía las balas hacia el punto rojo, su punto débil.  
+Objetivo: ¡Hazlo 7 veces para neutralizarlo!
+
 => END
 
 ~ well_done
-You can add text here after the player takes the collectible. Be creative with this one!
+Científica: ¡Lo lograste! No pensé que alguien pudiera detenerlo...  
+Científica: Vámonos de aquí antes de que esto colapse.  
+Gabo: Misión cumplida. Hora de desaparecer como un buen espía.
 => END

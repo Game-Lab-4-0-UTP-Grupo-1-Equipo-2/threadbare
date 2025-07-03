@@ -7,7 +7,10 @@
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_0fy5w"]
 [ext_resource type="Texture2D" uid="uid://b8wlr1m0dj6xc" path="res://scenes/quests/story_quests/pixel/imagenes/Recursos/Luna.png" id="4_h5ju4"]
 [ext_resource type="Resource" uid="uid://b1pe5dhmwu304" path="res://scenes/quests/story_quests/pixel/0_pixel_intro/pixel_intro_components/template_intro.dialogue" id="5_7iqcq"]
-[ext_resource type="Texture2D" uid="uid://ddrgwube0yys1" path="res://scenes/quests/story_quests/pixel/imagenes/Recursos/maquina para poner codigo.png" id="5_buo1i"]
+
+[ext_resource type="AudioStream" uid="uid://hfoo7osuxbee" path="res://scenes/quests/story_quests/pixel/sonidos/musicaIntro.mp3" id="7_1hl1a"]
+
+
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_hv8sg"]
 [ext_resource type="Texture2D" uid="uid://c16tkj5gbj0ic" path="res://scenes/quests/story_quests/pixel/imagenes/Recursos/marmolSuelo2.png" id="6_idg16"]
 [ext_resource type="Texture2D" uid="uid://bn63gvb56u88v" path="res://scenes/quests/story_quests/pixel/imagenes/Recursos/muro.png" id="7_wshy0"]
@@ -6071,6 +6074,7 @@ sources/16 = SubResource("TileSetAtlasSource_hnuop")
 sources/17 = SubResource("TileSetAtlasSource_ut767")
 sources/18 = SubResource("TileSetAtlasSource_8drhu")
 
+
 [sub_resource type="Animation" id="Animation_ld06i"]
 length = 0.001
 tracks/0/type = "value"
@@ -6249,5 +6253,6 @@ animation_player = NodePath("../OnTheGround/AnimationPlayer")
 next_scene = "uid://xd6i1vwmc03g"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
-[node name="Rock" parent="." instance=ExtResource("6_hv8sg")]
-position = Vector2(596, 404)
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_1hl1a")
+autoplay = true
