@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bxfddsjw7d2py"
+path="res://.godot/imported/pixel_5.dialogue-2fdac8adfcc756cbb77355b15d4f2d27.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/pixel/5_pixel_outro/pixel_5_components/pixel_5.dialogue"
+dest_files=["res://.godot/imported/pixel_5.dialogue-2fdac8adfcc756cbb77355b15d4f2d27.tres"]
+
+[params]
+
+defaults=true

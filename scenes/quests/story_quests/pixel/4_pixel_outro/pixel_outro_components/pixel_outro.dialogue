@@ -1,18 +1,13 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-Gabo: Todo terminó… o eso creía. Las balas se detuvieron, las alarmas callaron. Solo queda el silencio… al fin.  
+Informante (radio): ¡Bien hecho, Gabo! El equipo ya está fuera. Recuperamos la información y nadie nos siguió.
 
-Informante (voz entrecortada): Gabo… ¿me escuchas? ¡[b]Urgente[/b]! La científica… ¡[b]ella es la verdadera culpable[/b]! ¡[b]Todo fue una trampa[/b]!  
+Científica (aliviada): Gracias por salvarme... pensé que no saldríamos con vida.
 
-Gabo: ¿Qué? No te oigo… la señal está… ca...yendo…  
+Gabo: Tranquila. Todo terminó... por fin.
 
-Científica: Qué lástima… [i]demasiado tarde[/i], como siempre.  
+Informante: Les espera un lugar seguro. Prepárense para el traslado.
 
-Gabo: ¿Qué estás diciendo…?  
-
-Científica: [b]Todo este plan fue para capturarte[/b], Gabo. Y lo hiciste fácil.  
-
-Gabo (en voz baja): No… puede… ser…
-
+Gabo: (exhala) Una misión más…  
 => END
