@@ -1,10 +1,42 @@
-[gd_scene load_steps=10 format=4 uid="uid://c5w0ayooe0npd"]
+[gd_scene load_steps=16 format=4 uid="uid://c5w0ayooe0npd"]
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_tphk6"]
 [ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_Replace image.png" id="2_u0aeq"]
 [ext_resource type="SpriteFrames" uid="uid://2ao7815uhi0o" path="res://scenes/quests/story_quests/pixel/pixel_player_components/pixel_player.tres" id="3_dvdgf"]
+[ext_resource type="Texture2D" uid="uid://cgye5ukssxh2l" path="res://scenes/quests/story_quests/pixel/imagenes/villano Cientifica/cientiasombradat.png" id="3_lmkqa"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_esdm2"]
 [ext_resource type="Resource" uid="uid://c8pp4pfi2pbeg" path="res://scenes/quests/story_quests/pixel/4_pixel_outro/pixel_outro_components/pixel_outro.dialogue" id="5_tnufc"]
+[ext_resource type="AudioStream" uid="uid://dvey54pqclnb4" path="res://scenes/quests/story_quests/pixel/sonidos/musicaFinal.mp3" id="6_tnufc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3e85e"]
+size = Vector2(102, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pelar"]
+atlas = ExtResource("3_lmkqa")
+region = Rect2(0, 0, 120, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elq34"]
+atlas = ExtResource("3_lmkqa")
+region = Rect2(120, 0, 120, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m3um5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pelar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_elq34")
+}],
+"loop": true,
+"name": &"Cientifica",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="Animation" id="Animation_ld06i"]
 length = 0.001
@@ -108,7 +140,7 @@ tile_set = ExtResource("1_tphk6")
 metadata/_edit_lock_ = true
 
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers"]
-position = Vector2(1060, 169)
+position = Vector2(855, 182)
 scale = Vector2(0.802083, 0.802083)
 texture = ExtResource("2_u0aeq")
 
@@ -160,7 +192,20 @@ editor_draw_limits = true
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
 
+[node name="cientifica" type="CharacterBody2D" parent="OnTheGround"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OnTheGround/cientifica"]
+position = Vector2(599, 365)
+shape = SubResource("RectangleShape2D_3e85e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="OnTheGround/cientifica"]
+texture_filter = 1
+position = Vector2(598, 335)
+sprite_frames = SubResource("SpriteFrames_m3um5")
+animation = &"Cientifica"
+
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
+texture_filter = 1
 position = Vector2(400, 349)
 sprite_frames = ExtResource("3_dvdgf")
 animation = &"idle"
@@ -178,5 +223,8 @@ libraries = {
 script = ExtResource("4_esdm2")
 dialogue = ExtResource("5_tnufc")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://coi4lvxir542y"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_tnufc")
+autoplay = true

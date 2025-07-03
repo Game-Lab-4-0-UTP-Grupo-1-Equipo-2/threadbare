@@ -1,7 +1,9 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
+
 ~ start
 Informante (voz por radio): Estás dentro. Las cámaras están activas y los guardias patrullan. Tienes solo una oportunidad.
-
 Gabo: Recibido. Comenzando la infiltración... voy en silencio.
+Objetivo: Infiltra la base, consigue la clave secreta y escapa sin ser detectado.
+
 => END
